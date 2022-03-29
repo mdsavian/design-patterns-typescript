@@ -27,7 +27,7 @@ Install all dependencies:
 $ yarn bootstrap
 ```
 
-Run the specific folder you want:
+Run the specific pattern you want:
 
 ```
 $ npx ts-node ./src/creational-patterns/factory-method/index.ts
