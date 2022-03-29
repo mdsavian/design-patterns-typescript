@@ -18,7 +18,7 @@ First, make sure you have installed a recent [npm](https://nodejs.org/en/downloa
 After setting everything up, clone this repo:
 
 ```
-$ git clone git@github.com: AJUSTAR AQUI O REPO
+$ git clone git@github.com:mdsavian/design-patterns-typescript.git
 ```
 
 Install all dependencies:
