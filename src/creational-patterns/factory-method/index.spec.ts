@@ -1,26 +1,17 @@
-import { getEmployeeDescription } from '.';
-import Doctor from './concretes/Doctor';
-import Nurse from './concretes/Nurse';
+import { printTaxCoupon, printInvoice } from '.';
 
 describe('Factory Method', () => {
-  it('Should create a Doctor', () => {
-    const mockDoctor = new Doctor('John', 'john.doe@gmail.com', 345);
+  it('Should print a Tax Coupon', () => {
+    const description = printTaxCoupon();
 
-    const description = getEmployeeDescription(mockDoctor);
-
-    expect(description).toContain('Doctor');
-    expect(description).toContain('John');
-    expect(description).toContain('john.doe');
-    expect(description).toContain('345');
+    expect(description).toContain('tax coupon');
+    expect(description).not.toContain('invoice');
   });
 
-  it('Should create a Nurse', () => {
-    const mockNurse = new Nurse('Mary', 'mary.doe@gmail.com');
+  it('Should print an invoice', () => {
+    const description = printInvoice();
 
-    const description = getEmployeeDescription(mockNurse);
-
-    expect(description).toContain('Nurse');
-    expect(description).toContain('Mary');
-    expect(description).toContain('mary.doe');
+    expect(description).toContain('invoice');
+    expect(description).not.toContain('tax coupon');
   });
 });
