@@ -7,4 +7,5 @@ Here I made an example to print a document, if this document is a tax coupon we 
 ## References
 
 [Refactoring Guru](https://refactoring.guru/design-patterns/factory-method)
+
 [Wikipedia](https://en.wikipedia.org/wiki/Factory_method_pattern)
